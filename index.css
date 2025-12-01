@@ -9,7 +9,6 @@ header{
 }
 
 .logo{
-    /* background:red; */
     width: fit-content;
     height: 5rem;
     display: flex;
