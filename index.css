@@ -58,3 +58,14 @@ nav{
         cursor: pointer;
     }
 }
+
+h1{
+    background:pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    /* color:linear-gradient(120deg,red,blue); */
+    color: blueviolet;
+    font-size: clamp(2.5em,10vw,5em);
+}
