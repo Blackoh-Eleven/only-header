@@ -14,17 +14,84 @@
 
         <nav>
 
-         <ul>
+         <ul id="allul">
             <li>Home</li>
             <li>Contact</li>
             <li>About</li>
-            <li><span>X</span></li>
+            
         </ul>
+     
+        <!-- <span id="hide" onclick="hidemenu()">X</span> -->
+        <h2 id="show" onclick="showmenu()">E</h2>
+
+                 
         </nav>
 
 
         
     </header>
+
+
+    <script>
+
+
+      function showmenu (){
+        let navbar = document.getElementById('allul')
+        let real = window.getComputedStyle(navbar)
+
+        let show = document.getElementById('show')
+
+        if(real.right === '-2000px'){
+            navbar.style.right = '0px'
+            show.textContent = 'X'
+            
+        }else if (real.right === '0px'){
+            navbar.style.right = '-2000px'
+            show.textContent = 'E'
+        }
+        
+
+      }
+            //   function showmenu(){
+
+            //     let navbars = document.getElementById('allul')
+            //     let showing = document.getElementById('show').textContent
+            //     console.log(showing)
+
+            //     if (showing === 'E'){
+            //        document.getElementById('show').textContent = 'X'
+            //        navbars.style.display = 'block'
+            //         console.log('true')
+            //     }else if (showing === 'X'){
+            //         navbars.style.display = 'none'
+            //         document.getElementById('show').textContent = 'E'
+            //     }
+
+            //   }
+
+        // function hidemenu(){
+        //   let navbar =   document.getElementById('allul')
+        //   navbar.style.display = 'none'
+        // }
+
+        // function showmenu(){
+        //     let hide = document.getElementById('hide')
+        //     let navbar = document.getElementById('allul')
+        //     let show = document.querySelector('.show')
+        //     let showinner = show.textContent
+        //     // navbar.style.display = 'block'
+        //     // hide.style.display = 'block'
+
+        //     if(showinner === 'E'){
+        //         navbar.style.display = 'block'
+        //         console.log(showinner)
+        //         showinner = 'X'}
+        //     // }else if (showinner === 'X'){
+        //     //     navbar.style.display = 'none'
+        //     //     showinner = 'E'
+        //     // }
+        // }
+    </script>
 
 </body>
 </html>

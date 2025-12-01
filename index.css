@@ -30,34 +30,31 @@ nav{
 
 }
 
-nav > ul{
+#allul{
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
 @media (max-width:400px) {
-    nav>ul{
-        display: block;
+    #allul{
+        /* display: none; */
+        position: relative;
+        right: -2000px;
     }
 
 }
 
-li>span{
-    position: relative;
-    bottom: 10px;
+#show{
+    color: red;
     display: none;
 }
 
+
 @media (max-width:400px) {
 
-    li>span{
+    #show{
         display: block;
-        /* color: green; */
-        /* background:orange; */
-        position: relative;
-        display: flex;
-        bottom: 3.8em;
-        left: 4em;
+        cursor: pointer;
     }
 }
