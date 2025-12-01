@@ -26,6 +26,7 @@ header{
 
 nav{
     display: flex;
+    padding-right: 1.5em;
 
 }
 
@@ -38,5 +39,25 @@ nav > ul{
 @media (max-width:400px) {
     nav>ul{
         display: block;
+    }
+
+}
+
+li>span{
+    position: relative;
+    bottom: 10px;
+    display: none;
+}
+
+@media (max-width:400px) {
+
+    li>span{
+        display: block;
+        /* color: green; */
+        /* background:orange; */
+        position: relative;
+        display: flex;
+        bottom: 3.8em;
+        left: 4em;
     }
 }
