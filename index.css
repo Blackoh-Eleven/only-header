@@ -8,3 +8,16 @@ header{
     height: 5rem;
 }
 
+.logo{
+    /* background:red; */
+    width: fit-content;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 3px;
+    font-size: larger;
+    color: white;
+}
+
